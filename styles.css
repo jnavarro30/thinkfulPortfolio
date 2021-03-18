@@ -82,11 +82,11 @@ ul, ol {
 
 /* footer */
 
-#linkedin, #github {
+#linkedin, #github, #mail {
     width: 4rem;
 }
 
-#linkedin:hover, #github:hover {
+#linkedin:hover, #github:hover, #mail:hover {
     width: 4.1rem;
     background-color: rgba(255, 165, 0, 1);
 }
