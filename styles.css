@@ -14,34 +14,34 @@
     color: var(--primary-Color);
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: var(--secondary-Color);
+html, body, .container {
     height: 100%;
+}
+
+.container {
+    text-align: center;
+    background-color: var(--secondary-Color);
+    margin: 0 auto;
 }
 
 header, footer {
     padding: 1rem;
 }
 
-p, ul, ol {
-    max-width: 600px;
-    margin: 0 auto;
+p, ul {
     font-size: 1.2rem;
 }
 
-/* header */
+/* nav */
 nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--primary-Color);
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid white;
 }
 
 a {
@@ -51,7 +51,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: orange;
+    text-shadow: 0 0 5px orange;
 }
 
 h2 {
@@ -64,6 +64,7 @@ h2 {
     border: 10px solid var(--primary-Color);
     border-radius: 10%;
     margin: 1rem 0;
+    width: 100%;
 }
 
 figure {
@@ -75,28 +76,113 @@ figcaption {
     font-size: 2rem;
 }
 
-ul, ol {
-    width: 200px;
-    margin: 1rem auto;
+#about {
+    margin: 0 1rem;
+}
+
+ul {
+    width: 100%;
+    margin: 0.5rem auto;
+    list-style-type: none;
 }
 
 /* footer */
+footer {
+    border-top: 1px solid white;
+}
+
+#contact {
+    margin: 0 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+.name, .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+textarea {
+    width: 80%;
+}
+
+button {
+    padding: 0.5rem;
+}
 
 #linkedin, #github, #mail {
-    width: 4rem;
+    width: 3.2rem;
 }
 
 #linkedin:hover, #github:hover, #mail:hover {
-    width: 4.1rem;
-    background-color: rgba(255, 165, 0, 1);
+    width: 3.3rem;
+    box-shadow: 0 0 5px orange;
 }
 
 h3 {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color: black;
 }
 
-.lasthr {
-    color: white;
-    background: white;
-    height: 5px;
+/* responsiveness */
+@media(min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'nav nav nav'
+        'head head head'
+        'main main main'
+        'foot foot foot';
+        max-width: 900px;
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+
+    header {
+        grid-area: head;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+    }
+
+    #about {
+        border-top: 1px solid white;
+    }
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    footer {
+        grid-area: foot;
+    }
+
+    #contact {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    textarea {
+        width: 100%;
+        justify-self: center;
+    }
+    
 }

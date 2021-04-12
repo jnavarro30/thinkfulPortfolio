@@ -21,8 +21,7 @@
         <header>
             <section id='intro' class='intro'>
                 <h2>Intro</h2>
-                <p>My name is Jesse Navarro and I am on my way of becoming a full stack developer.</p>
-                <p>I am currently located in Orange County.</p>
+                <p>My name is Jesse Navarro and I am a full stack developer currently located in Orange County.</p>
             </section>
         </header>
         <hr>
@@ -35,30 +34,40 @@
             <hr>
             <article id='about' class='about'>
                 <h2>About Me</h2>
-                <p>I have been working on the fundamentals of Javascript for almost 2 years and now have the opportunity to apply what I learned. Whether working alone or collaborating with others, building apps and sites are always fun.</p>
-                <p>When not behind a computer screen, I like to play some music on the keyboard or shoot some hoops with friends as well as:</p>
+                <p>I joined Thinkful to further expand on my programming knowledge and refine my skills. For the past 2 years I have been programming almost everyday and enjoy the whole process from start to finish.</p>
+                <h3>skills</h3>
                 <ul>
-                    <li>Hiking</li>
-                    <li>Handball</li>
-                    <li>Watching shows</li>
-                    <li>Dream Yoga</li>
-                </ul>
-                <p>As a web developer the skills that I possess are:</p>
-                <ol>
                     <li>Javascript</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>React</li>
-                </ol>
+                </ul>
             </article>
         </main>
-        <hr class='lasthr'>
         <!-- footer -->
         <footer>
-            <section id='contact' class='contact'>
+            <section id='contact'>
                 <h2>Contact</h2>
-                <p>Feel free to contact me through LinkedIn or checkout my work on Github. Let's build something together.</p>
-                <h3>Links</h3>
+                <form action="https://formspree.io/f/xnqovebe" method="POST">
+                    <div class="name">
+                        <input id="first-name" type="text" name="first-name" placeholder="First name" required>
+                        <label for="first-name"></label>
+                        <input id="last-name" type="text" name="last-name" placeholder="Last name">
+                        <label for="last-name"></label>
+                    </div>
+                    <div class="contact">
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                        <label for="email"></label>
+                        <input id="phone" type="text" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx">
+                        <label for="phone"></label>
+                    </div>
+                    <textarea id="message" name="message" maxLength="250" placeholder="comments..."></textarea>
+                    <label for="message"></label>
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
                 <a href='https://www.linkedin.com/in/jesse-navarro-0789' target="_blank"><img id='linkedin' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMGgtMTRjLTIuNzYxIDAtNSAyLjIzOS01IDV2MTRjMCAyLjc2MSAyLjIzOSA1IDUgNWgxNGMyLjc2MiAwIDUtMi4yMzkgNS01di0xNGMwLTIuNzYxLTIuMjM4LTUtNS01em0tMTEgMTloLTN2LTExaDN2MTF6bS0xLjUtMTIuMjY4Yy0uOTY2IDAtMS43NS0uNzktMS43NS0xLjc2NHMuNzg0LTEuNzY0IDEuNzUtMS43NjQgMS43NS43OSAxLjc1IDEuNzY0LS43ODMgMS43NjQtMS43NSAxLjc2NHptMTMuNSAxMi4yNjhoLTN2LTUuNjA0YzAtMy4zNjgtNC0zLjExMy00IDB2NS42MDRoLTN2LTExaDN2MS43NjVjMS4zOTYtMi41ODYgNy0yLjc3NyA3IDIuNDc2djYuNzU5eiIvPjwvc3ZnPg==" alt="linked in logo"></a>
                 <a href='https://github.com/jnavarro30' target="_blank"><img id='github' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMGgtMTRjLTIuNzYxIDAtNSAyLjIzOS01IDV2MTRjMCAyLjc2MSAyLjIzOSA1IDUgNWgxNGMyLjc2MiAwIDUtMi4yMzkgNS01di0xNGMwLTIuNzYxLTIuMjM4LTUtNS01em0tNC40NjYgMTkuNTljLS40MDUuMDc4LS41MzQtLjE3MS0uNTM0LS4zODR2LTIuMTk1YzAtLjc0Ny0uMjYyLTEuMjMzLS41NS0xLjQ4MSAxLjc4Mi0uMTk4IDMuNjU0LS44NzUgMy42NTQtMy45NDcgMC0uODc0LS4zMTItMS41ODgtLjgyMy0yLjE0Ny4wODItLjIwMi4zNTYtMS4wMTYtLjA3OS0yLjExNyAwIDAtLjY3MS0uMjE1LTIuMTk4LjgyLS42NC0uMTgtMS4zMjQtLjI2Ny0yLjAwNC0uMjcxLS42OC4wMDMtMS4zNjQuMDkxLTIuMDAzLjI2OS0xLjUyOC0xLjAzNS0yLjItLjgyLTIuMi0uODItLjQzNCAxLjEwMi0uMTYgMS45MTUtLjA3NyAyLjExOC0uNTEyLjU2LS44MjQgMS4yNzMtLjgyNCAyLjE0NyAwIDMuMDY0IDEuODY3IDMuNzUxIDMuNjQ1IDMuOTU0LS4yMjkuMi0uNDM2LjU1Mi0uNTA4IDEuMDctLjQ1Ny4yMDQtMS42MTQuNTU3LTIuMzI4LS42NjYgMCAwLS40MjMtLjc2OC0xLjIyNy0uODI1IDAgMC0uNzgtLjAxLS4wNTUuNDg3IDAgMCAuNTI1LjI0Ni44ODkgMS4xNyAwIDAgLjQ2MyAxLjQyOCAyLjY4OC45NDR2MS40ODljMCAuMjExLS4xMjkuNDU5LS41MjguMzg1LTMuMTgtMS4wNTctNS40NzItNC4wNTYtNS40NzItNy41OSAwLTQuNDE5IDMuNTgyLTggOC04czggMy41ODEgOCA4YzAgMy41MzMtMi4yODkgNi41MzEtNS40NjYgNy41OXoiLz48L3N2Zz4=" alt="github logo"></a>
                 <a href='mailto:jnavarro0789@gmail.com' target="_blank"><img id='mail' src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOSAyNGgtMTRjLTIuNzYxIDAtNS0yLjIzOS01LTV2LTE0YzAtMi43NjEgMi4yMzktNSA1LTVoMTRjMi43NjIgMCA1IDIuMjM5IDUgNXYxNGMwIDIuNzYxLTIuMjM4IDUtNSA1em0tLjE0MS02LjMzM2MuNjMgMCAxLjE0MS0uNTEyIDEuMTQxLTEuMTQydi05LjA1YzAtLjYzLS41MTEtMS4xNDItMS4xNDEtMS4xNDJoLTEzLjcxOGMtLjYzIDAtMS4xNDEuNTEyLTEuMTQxIDEuMTQydjkuMDVjMCAuNjMuNTExIDEuMTQyIDEuMTQxIDEuMTQyaDEzLjcxOHptLTYuODU5LTQuMDU4bC02LjIyOC00LjMyMS0uMDE0IDcuNzEyaDEyLjQ1N3YtNy43MTJsLTYuMjE1IDQuMzIxem01LjkxMy02LjYwOWMtMS43NDUgMS4yMTUtNS45MTMgNC4xNTMtNS45MTMgNC4xNTNsLTUuOTQ3LTQuMTUzaDExLjg2eiIvPjwvc3ZnPg==" alt='envelop icon'></a>
